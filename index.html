@@ -50,11 +50,7 @@
             <h1 class="nerf_title_v2">CraftsMan3D:<br /> High-fidelity Mesh Generation with 3D Native Generation and Interactive Geometry Refiner</h1>
             <!-- <div class="nerf_subheader_v2"></div> -->
             <h1 class="nerf_affiliation_v2" style="font-size:24px;"><i class="fa fa-bullhorn" style="color:#F9423A"> </i>
-                <font color="#F9423A"><b> A More Powerful Version is Released, please try at !!!</b></font></h1>
-		    <a class="btn" href="http://algodemo.bj.lightions.top:24926" role="button" target="_blank">
-			<i class="fa-solid fa-chess-knight"></i> Gradio (Local) </a> 
-		    <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
-			<i class="fa-solid fa-chess-knight"></i> Gradio (HF) </a> 
+                <font color="#F9423A"><b> We are continuing to grow, more models will be released in the next months !!!</b></font></h1>
             <div class="nerf_subheader_v2">
                 <div>
                     <a href="https://wyysf-98.github.io/" target="_blank" class="nerf_authors_v2">Weiyu Li*<span
@@ -86,18 +82,26 @@
                         <i class="fa fa-file-pdf"></i> Paper </a>
                     <a class="btn" href="paper/supp.pdf" role="button" target="_blank">
                         <i class="fa fa-file-pdf"></i> Supp. </a>
-                    <!-- <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
-                        <i class="fas fa-rocket"></i> Huggingface </a> -->
                     <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
-                        <i class="fa-solid fa-chess-knight"></i> Gradio (HF) </a> 
+                        <i class="fa-solid fa-chess-knight"></i> Demo (HF) </a> 
                     <a class="btn" href="http://algodemo.bj.lightions.top:24926" role="button" target="_blank">
-                        <i class="fa-solid fa-chess-knight"></i> Gradio (Local) </a> 
+                        <i class="fa-solid fa-chess-knight"></i> Demo (Local) </a> 
                     <a class="btn" href="https://github.com/wyysf-98/CraftsMan3D" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-github"></i> Code </a>
                     <a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=WhEs4tS4mGo" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-youtube"></i> Video </a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="white_section_nerf  w-container">
+        <!-- <h2 class="grey-heading_nerf nerf_text">Acknowledgement</h2> -->
+        <div class="grid-container-1">
+	    <p> 
+		    <strong>Acknowledgement: <a href="mailto:flybirdtian@gmail.com" target="_blank" class="nerf_authors_v2">Feipeng Tian</span></a>, <a href="mailto:sxwlttsd@gmail.com" target="_blank" class="nerf_authors_v2">Xiao Chen</span></a> from <a href="https://www.lightillusions.com/" target="_blank" class="nerf_authors_v2">LightIllusions</span></a>
+                working on the algorithm generation of the texture part; <a href="mailto:wylm.ng@qq.com" target="_blank" class="nerf_authors_v2">Shihao Wu</a>, <a href="mailto:eescutwangzihao@163.com" target="_blank" class="nerf_authors_v2">Zihao Wang</a> from LightIllusions
+                working for the data processing, including data cleaning and rendering;<br></strong>
+	    </p>
         </div>
     </div>
 
@@ -136,43 +140,51 @@
 
     <div class="white_section_nerf  w-container">
         <h2 class="grey-heading_nerf">Image Conditioned 3D Native Diffusion Results</h2>
+        <p class="myprompt nerf_text"> Some images are from 
+            <a href="https://hyperhuman.deemos.com/rodin" target="_blank" class="nerf_authors_v2">Rodin<span
+                class="text-span_nerf"></span></a>,
+            <a href="https://www.tripo3d.ai/" target="_blank" class="nerf_authors_v2">Tripo<span
+                class="text-span_nerf"></span></a>,
+            <a href="https://nju-3dv.github.io/projects/Direct3D/" target="_blank" class="nerf_authors_v2">Direct3D<span
+                class="text-span_nerf"></span></a>.
+            </p>
         <div class="grid-container-4">
             <div>
                 <p class="myprompt nerf_text"> Reference Image </p>
-                <img src="assets/mesh/image_based/out1/8/preprocessed_image_w.png">
+                <img src="assets/image_to_3d/monster.png">
             </div>
             <div>
                 <p class="myprompt nerf_text"> Output Coarse Mesh </p>
                 <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/image_based/it100000/8_0.glb">
+                src="assets/image_to_3d/monster_textured.glb">
                 </model-viewer>
             </div>
             <div>
                 <p class="myprompt nerf_text"> Reference Image </p>
-                <img src="assets/mesh/image_based/out1/9/preprocessed_image_w.png">
+                <img src="assets/image_to_3d/bug.png">
             </div>
             <div>
                 <p class="myprompt nerf_text"> Output Coarse Mesh </p>
                 <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/image_based/it100000/9_0.glb">
+                src="assets/image_to_3d/bug_textured.glb">
                 </model-viewer>
             </div>
         </div>
         <div class="grid-container-4">
             <div>
-                <img src="assets/mesh/image_based/out1/13/preprocessed_image_w.png">
+                <img src="assets/image_to_3d/dragon.png">
             </div>
             <div>
                 <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/image_based/it100000/13_01.glb">
+                src="assets/image_to_3d/dragon_textured.glb">
                 </model-viewer>
             </div>
             <div>
-                <img src="assets/mesh/image_based/xiaomai/0.png">
+                <img src="assets/image_to_3d/fac87a0ff51148859b16b8bfa7e9bfe0.png">
             </div>
             <div>
                 <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/image_based/xiaomai/ours.glb">
+                src="assets/image_to_3d/fac87a0ff51148859b16b8bfa7e9bfe0_textured.glb">
                 </model-viewer>
             </div>
         </div>
@@ -255,7 +267,7 @@
     <div class="white_section_nerf  w-container">
         <h2 class="grey-heading_nerf">Method Overview</h2>
         <div class="grid-container-1">
-            <img src="assets/images/overview.jpg">
+            <img src="assets/images/overview.png">
 
             <p> Our method first transforms the input single image or text prompt into multi-view images using a multi-view diffusion model.
                 These generated multi-view images are then fed into a native 3D diffusion model as conditions to produce a coarse mesh with regular topology. Finally, a
@@ -264,6 +276,9 @@
             </p>
         </div>
     </div>
+
+
+
 
     <div class="white_section_nerf  w-container">
         <h2 class="grey-heading_nerf">Related Works</h2>
