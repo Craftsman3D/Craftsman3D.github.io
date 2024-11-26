@@ -81,17 +81,18 @@
                         <i class="ai ai-arxiv"></i> Arxiv </a>
                     <a class="btn" href="paper/paper.pdf" role="button" target="_blank">
                         <i class="fa fa-file-pdf"></i> Paper </a>
-                    <a class="btn" href="paper/supp.pdf" role="button" target="_blank">
-                        <i class="fa fa-file-pdf"></i> Supp. </a>
-                    <!-- <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
-                        <i class="fas fa-rocket"></i> Huggingface </a> -->
+                    <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
+                        <i class="fa-solid fa-chess-knight"></i> Demo (HF) </a> 
+                    <a class="btn" href="http://143.89.144.14/" role="button" target="_blank">
+                        <i class="fa-solid fa-chess-knight"></i> Demo (Local) </a> 
                     <a class="btn" href="http://algodemo.bj.lightions.top:24926" role="button" target="_blank">
-                        <i class="fa-solid fa-chess-knight"></i> Gradio </a> 
+                        <i class="fa-solid fa-chess-knight"></i> Demo (Local_bak) </a> 
                     <a class="btn" href="https://github.com/wyysf-98/CraftsMan3D" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-github"></i> Code </a>
                     <a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=WhEs4tS4mGo" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-youtube"></i> Video </a>
                 </div>
+                
             </div>
         </div>
 
@@ -100,58 +101,66 @@
     <div class="white_section_nerf  w-container">
         <h2 class="grey-heading_nerf">Result Gallery for Text Conditioned 3D Native Diffusion(1 - 8 / 8)</h2>
         <div class="grid-container-2">
+            <p class="myprompt_mesh_text"> Baby Yoda in the style of Mormookiee </p>
+            <p class="myprompt_mesh_text">Leaning Tower of Pisa</p>
+        </div>
+        <div class="grid-container-2">
             <div class="model-block">
-                <p class="myprompt_mesh_text"> Baby Yoda in the style of Mormookiee </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/Baby Yoda in the style of Mormookiee/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/Baby Yoda in the style of Mormookiee.glb">
                 </model-viewer>
             </div>
-            <div class="model-block"> 
-                <p class="myprompt_mesh_text"> cute hyperrealistic futuristic soldier cat </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/cute hyperrealistic futuristic soldier cat/mesh.glb">
+            <div class="model-block">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/Leaning Tower of Pisa.glb">
                 </model-viewer>
             </div>
         </div>
         <div class="grid-container-2">
+            <p class="myprompt nerf_text"> A cute Minion </p>
+            <p class="myprompt nerf_text"> An astronaut in a space suit </p>
+        </div>
+        <div class="grid-container-2">
             <div class="model-block">
-                <p class="myprompt nerf_text">A lobster, character</p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/A lobster, character/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/A cute Minion.glb">
                 </model-viewer>
             </div>
             <div class="model-block"> 
-                <p class="myprompt nerf_text">a marble bust of a fox head</p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/a marble bust of a fox head/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/An astronaut in a space suit.glb">
                 </model-viewer>
             </div>
         </div>
         <div class="grid-container-2">
-            <div class="model-block">
-                <p class="myprompt_mesh_text">A cute Minion in gloves</p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/A cute Minion in gloves/mesh.glb">
+            <p class="myprompt_mesh_text"> cute hyperrealistic futuristic soldier cat </p>
+            <p class="myprompt_mesh_text">Banana boss, cute, hands and legs</p>
+        </div>
+        <div class="grid-container-2">
+            <div class="model-block"> 
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/cute hyperrealistic futuristic soldier cat.glb">
                 </model-viewer>
             </div>
             <div class="model-block"> 
-                <p class="myprompt_mesh_text">a sofa</p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/a sofa/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/banana boss, cute, hands and legs.glb">
                 </model-viewer>
             </div>
         </div>
         <div class="grid-container-2">
+            <p class="myprompt nerf_text"> An ice-cream cone </p>
+            <p class="myprompt nerf_text"> A lobster, character </p>
+        </div>
+        <div class="grid-container-2">
             <div class="model-block">
-                <p class="myprompt nerf_text"> a delicious croissant </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/a delicious croissant/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/An ice-cream cone.glb">
                 </model-viewer>
             </div>
             <div class="model-block"> 
-                <p class="myprompt nerf_text"> An ice-cream cone </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/An ice-cream cone/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 150%"
+                src="assets/text-to-3d/A lobster, character.glb">
                 </model-viewer>
             </div>
         </div>

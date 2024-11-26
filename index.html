@@ -80,8 +80,6 @@
                         <i class="ai ai-arxiv"></i> Arxiv </a>
                     <a class="btn" href="paper/paper.pdf" role="button" target="_blank">
                         <i class="fa fa-file-pdf"></i> Paper </a>
-                    <a class="btn" href="paper/supp.pdf" role="button" target="_blank">
-                        <i class="fa fa-file-pdf"></i> Supp. </a>
                     <a class="btn" href="https://huggingface.co/spaces/wyysf/CraftsMan3D" role="button" target="_blank">
                         <i class="fa-solid fa-chess-knight"></i> Demo (HF) </a> 
                     <a class="btn" href="http://143.89.144.14/" role="button" target="_blank">
@@ -93,6 +91,7 @@
                     <a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=WhEs4tS4mGo" role="button" target="_blank" disabled>
                         <i class="fa-brands fa-youtube"></i> Video </a>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -200,30 +199,33 @@
     <div class="white_section_nerf  w-container">
         <h2 class="grey-heading_nerf">Text Conditioned 3D Native Diffusion Results</h2>
         <div class="grid-container-4">
+            <p class="myprompt nerf_text"> Leaning Tower <br /> of Pisa <br /> </p>
+            <p class="myprompt nerf_text"> Baby Yoda in the style of Mormookiee </p>
+            <p class="myprompt nerf_text"> An astronaut <br /> in a space suit  </p>
+            <p class="myprompt nerf_text"> Banana boss, <br />cute, hands and legs </p>
+        </div>
+        <div class="grid-container-4">
             <div class="model-block">
-                <p class="myprompt nerf_text"> A cute panda </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/a cute panda/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 200%"
+                src="assets/text-to-3d/Leaning Tower of Pisa.glb">
                 </model-viewer>
             </div>
             <div class="model-block"> 
-                <p class="myprompt nerf_text"> Leaning Tower of Pisa </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/Leaning Tower of Pisa/mesh.glb">
-                </model-viewer>
-            </div>
-            <div class="model-block"> 
-                <p class="myprompt nerf_text"> Viking axe, fantasy, weapon </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/Viking axe, fantasy, weapon/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 200%"
+                src="assets/text-to-3d/Baby Yoda in the style of Mormookiee.glb">
                 </model-viewer>
             </div>
             <div class="model-block">
-                <p class="myprompt nerf_text"> A cute rabbit </p>
-                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 150%" max-camera-orbit="auto auto 100%"
-                src="assets/mesh/text_based/text23d/A cute rabbit/mesh.glb">
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 200%"
+                src="assets/text-to-3d/An astronaut in a space suit.glb">
                 </model-viewer>
             </div>
+            <div class="model-block"> 
+                <model-viewer exposure="0.5" camera-controls enable-pan shadow-intensity="2" camera-orbit="0deg 75deg 110%" max-camera-orbit="auto auto 200%"
+                src="assets/text-to-3d/banana boss, cute, hands and legs.glb">
+                </model-viewer>
+            </div>
+
         </div>
         <div class="grid-container-1">
             <a class="mybtn" href="text-conditioned-3D-gallery_0.html" role="button">
@@ -236,24 +238,24 @@
         <h2 class="grey-heading_nerf">Normal Brush Results</h2>
         <div class="grid-container-4">
             <div>
-                <video class="video" id="73" loop playsinline autoPlay muted
-                src="assets/videos/normal_brush/73_0.mp4" onplay="resizeAndPlay(this)"></video>
-                <canvas class="videoMerge" id="73_merge"></canvas>
+                <video class="video" id="44" loop playsinline autoPlay muted
+                src="assets/refined_mesh/44.mp4" onplay="resizeAndPlay(this)"></video>
+                <canvas class="videoMerge" id="44_merge"></canvas>
             </div>
             <div>
-                <video class="video" id="11" loop playsinline autoPlay muted
-                src="assets/videos/normal_brush/Baby Yoda in the style of Mormookiee.mp4" onplay="resizeAndPlay(this)"></video>
-                <canvas class="videoMerge" id="11_merge"></canvas>
+                <video class="video" id="16" loop playsinline autoPlay muted
+                src="assets/refined_mesh/16.mp4" onplay="resizeAndPlay(this)"></video>
+                <canvas class="videoMerge" id="16_merge"></canvas>
             </div>
             <div>
-                <video class="video" id="12" loop playsinline autoPlay muted
-                src="assets/videos/normal_brush/25_0.mp4" onplay="resizeAndPlay(this)"></video>
-                <canvas class="videoMerge" id="12_merge"></canvas>
+                <video class="video" id="39" loop playsinline autoPlay muted
+                src="assets/refined_mesh/39.mp4" onplay="resizeAndPlay(this)"></video>
+                <canvas class="videoMerge" id="39_merge"></canvas>
             </div>
             <div>
-                <video class="video" id="10" loop playsinline autoPlay muted
-                src="assets/videos/normal_brush/75_0.mp4" onplay="resizeAndPlay(this)"></video>
-                <canvas class="videoMerge" id="10_merge"></canvas>
+                <video class="video" id="8" loop playsinline autoPlay muted
+                src="assets/refined_mesh/8.mp4" onplay="resizeAndPlay(this)"></video>
+                <canvas class="videoMerge" id="8_merge"></canvas>
             </div>
 
 
@@ -300,7 +302,7 @@ a Direct 3D Variational Auto-Encoder (D3D-VAE) and a Direct 3D Diffusion Transfo
 <h2 class="grey-heading_nerf">BibTeX</h2>
 <div class="bibtex">
     <pre><code>@article{li2024craftsman,
-author    = {Weiyu Li and Jiarui Liu and Rui Chen and Yixun Liang and Xuelin Chen and Ping Tan and Xiaoxiao Long},
+author    = {Weiyu Li and Jiarui Liu and Hongyu Yan and Rui Chen and Yixun Liang and Xuelin Chen and Ping Tan and Xiaoxiao Long},
 title     = {CraftsMan3D: High-fidelity Mesh Generation with 3D Native Generation and Interactive Geometry Refiner},
 journal   = {arXiv preprint arXiv:2405.14979},
 year      = {2024},
